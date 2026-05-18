@@ -9,28 +9,30 @@
 <body style="margin:0;padding:0;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;min-height:100vh;gap:0;">
 
   <!-- Weather widget -->
-  <a
-    class="weatherwidget-io"
-    href="https://forecast7.com/en/34d68n82d84/clemson/?unit=us"
-    data-label_1="CLEMSON, SC"
-    data-label_2="WEATHER"
-    data-theme="pure"
-    data-highcolor="#f56600"
-    data-suncolor="#f56600">
-    CLEMSON, SC WEATHER
-  </a>
+  <div style="width:100%;max-width:1000px;margin:0 auto;">
+    <a class="weatherwidget-io"
+       href="https://forecast7.com/en/34d68n82d84/clemson/?unit=us"
+       data-label_1="CLEMSON, SC"
+       data-label_2="WEATHER"
+       data-theme="pure"
+       data-accent=""
+       data-highcolor="#f56600"
+       data-suncolor="#f56600">
+       CLEMSON, SC WEATHER
+    </a>
 
-  <script>
-    !function(d,s,id){
-      var js,fjs=d.getElementsByTagName(s)[0];
-      if(!d.getElementById(id)){
-        js=d.createElement(s);
-        js.id=id;
-        js.src='https://weatherwidget.io/js/widget.min.js';
-        fjs.parentNode.insertBefore(js,fjs);
-      }
-    }(document,'script','weatherwidget-io-js');
-  </script>
+    <script>
+      !function(d,s,id){
+        var js,fjs=d.getElementsByTagName(s)[0];
+        if(!d.getElementById(id)){
+          js=d.createElement(s);
+          js.id=id;
+          js.src='https://weatherwidget.io/js/widget.min.js';
+          fjs.parentNode.insertBefore(js,fjs);
+        }
+      }(document,'script','weatherwidget-io-js');
+    </script>
+  </div>
 
   <!-- CDC HeatRisk gauge -->
   <div style="display:flex;justify-content:center;margin-top:16px;">
