@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clemson, SC Weather</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clemson, SC Weather</title>
 </head>
+
 <body style="margin:0;padding:0;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;min-height:100vh;gap:0;">
 
   <!-- Weather widget -->
-  <a class="weatherwidget-io" href="https://forecast7.com/en/34d68n82d84/clemson/?unit=us" data-label_1="CLEMSON, SC" data-label_2="WEATHER" data-theme="pure" data-accent="" data-highcolor="#f56600" data-suncolor="#f56600" >CLEMSON, SC WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
+  <a
+    class="weatherwidget-io"
+    href="https://forecast7.com/en/34d68n82d84/clemson/?unit=us"
+    data-label_1="CLEMSON, SC"
+    data-label_2="WEATHER"
+    data-theme="pure"
+    data-highcolor="#f56600"
+    data-suncolor="#f56600">
+    CLEMSON, SC WEATHER
+  </a>
+
+  <script>
+    !function(d,s,id){
+      var js,fjs=d.getElementsByTagName(s)[0];
+      if(!d.getElementById(id)){
+        js=d.createElement(s);
+        js.id=id;
+        js.src='https://weatherwidget.io/js/widget.min.js';
+        fjs.parentNode.insertBefore(js,fjs);
+      }
+    }(document,'script','weatherwidget-io-js');
+  </script>
+
   <!-- CDC HeatRisk gauge -->
   <div style="display:flex;justify-content:center;margin-top:16px;">
-    <iframe style="border:none;display:block;"
+    <iframe
+      style="border:none;display:block;"
       sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
       title="Today's HeatRisk Widget"
       height="400"
@@ -25,7 +46,8 @@
 
   <!-- CDC 7-day forecast -->
   <div style="display:flex;justify-content:center;margin-top:16px;width:100%;overflow-x:auto;">
-    <iframe style="border:none;display:block;"
+    <iframe
+      style="border:none;display:block;"
       sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
       title="7-Day Forecast Widget"
       height="290"
